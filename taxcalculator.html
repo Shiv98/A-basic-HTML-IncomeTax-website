@@ -1,0 +1,93 @@
+<HTML>
+<head>
+     <link rel="stylesheet" type="text/css" href="button.css">
+     <link rel="stylesheet" type="text/css" href="textbox.css">
+	<style>
+	table{
+	width:700px;
+	height:80%;
+	font-size:30px;
+	background-color:white;
+	//border-bottom:5px solid grey;
+	text-align:center;
+	padding:2px;
+	color:grey;
+	border-radius:5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	th{
+	color:white;
+	background-color:salmon;
+	text-align:center;
+	border-radius:5px;
+	}
+	</style>
+	<script>
+	function calculate()
+	{
+	var age=parseInt(frm.uage.value);
+	var inc=parseInt(frm.income.value);
+	var amount;
+	if(age<=60)
+	{
+	     if(inc<=250000)
+		 {amount=0;}
+		 else if (inc<=500000)
+		 {amount=(inc-250000)*0.1;}
+		 else if(inc<=1000000)
+		 {amount=25000+((inc-500000)*0.2);}
+		 else 
+		 {amount=125000+((inc-1000000)*0.3);}
+	frm.result.value=amount;	 
+	}
+	if(age>60&&age<80)
+	{
+	if(inc<=300000)
+		 {amount=0;}
+		 else if (inc<=500000)
+		 {amount=(inc-300000)*0.1;}
+		 else if(inc<=1000000)
+		 {amount=20000+((inc-500000)*0.2);}
+		 else 
+		 {amount=120000+((inc-1000000)*0.3);}
+	frm.result.value=amount;
+	}
+	if(age>=80)
+	{
+	if(inc<=500000)
+		 {amount=0;}
+		 else if (inc<=1000000)
+		 {amount=(inc-500000)*0.2;}
+		 else 
+		 {amount=100000+((inc-1000000)*0.3);}
+	frm.result.value=amount;
+	}
+	}
+	</script>
+	
+	
+	
+<BODY bgcolor=Lightsalmon>
+
+<FORM name=frm>
+<BR><BR><BR>
+<TABLE align=center cellspacing=4>
+<Thead><th colspan=2 align=center> TAX CALCULATOR</thead>
+<FORM>
+<TR>
+<TD>Choose gender: 
+<TD><INPUT type="radio" NAME="gen" value="male">Male
+<INPUT type="radio" NAME="gen" value="female">Female<BR></TR>
+<TR>
+<TD> Enter your Age:
+<TD> <INPUT type= text name=uage>
+</TR>
+<TR>
+<TD>Net Taxable income:
+<TD><input type=text name=income>
+</TR>
+<TR><TD>So  your Tax is 
+<TD> <input type= text name=result>
+</TR>
+<TR><TD colspan=2 align=center><Input type=button value=Calculate onClick=calculate()>
+</TR></FORM></Table></BODY>	

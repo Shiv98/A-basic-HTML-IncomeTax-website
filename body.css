@@ -1,0 +1,17 @@
+body{
+background-color:white;
+font-family:arial;
+}
+span{
+color:salmon;
+font-weight:bold;
+}
+p{
+text-align:justify;
+width:90%;
+height:70%;
+font-size:15px;
+background-color:white;
+overflow:auto;
+border-style:dashed;
+}

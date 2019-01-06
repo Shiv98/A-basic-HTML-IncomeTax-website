@@ -1,0 +1,16 @@
+table{
+width:100%;
+border-bottom-style:solid;
+color:white;
+}
+th,td{
+width:20%;
+border:1px solid salmon;
+background-color:salmon;
+}
+th:hover{
+width:20%;
+border:1px solid salmon;
+background-color:white;
+color:grey;
+}

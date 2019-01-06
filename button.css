@@ -1,0 +1,30 @@
+button,input[type=button],input[type=submit]{
+border-style:none;
+border-radius:2px;
+height:40px;
+width:220px;
+color:white;
+font-size:20px;
+background-color:salmon;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+button:hover,input[type=button]:hover,input[type=submit]:hover{
+border-style:solid;
+border-color:salmon;
+border-radius:2px;
+height:40px;
+width:220px;
+color:salmon;
+font-size:20px;
+background-color:white;
+}
+select{
+border:1px solid salmon;
+border-radius:2px;
+height:40px;
+width:220px;
+color:grey;
+font-size:20px;
+background-color:white;
+//box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
